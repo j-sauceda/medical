@@ -30,6 +30,7 @@ DEBUG = config('DEBUG')
 
 ALLOWED_HOSTS = [
     config('PUBLIC_IP'),
+    config('DOMAIN'),
     config('DOMAIN_HTTP'),
     config('DOMAIN_HTTPS'),
     '127.0.0.1',
