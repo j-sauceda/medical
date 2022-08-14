@@ -17,20 +17,20 @@ Please, notice that the source-code is provided without warranty. This is an unf
 
 ## hints
 
-> $ cd /path/to/Projects/
-> $ mkdir medical
-> $ cd medical
-> $ git clone https://github.com/j-sauceda/medical.git ./
-> $ cd ..
-> $ python3 -m venv medical
-> $ cd medical
-> $ source bin/activate
-> $ pip3 install -r requirements.txt
-> $ cp .env.example .env
-> $ edit .env
-> $ python3 manage.py collectstatic
-> uncomment STATICFILES_DIR in medical/settings.py
-> $ cd frontend/
-> $ npm install
-> $ npm run build
-> deploy -- depends on your server (nginx, apache, lighttpd)
+- $ cd /path/to/Projects/
+- $ mkdir medical
+- $ cd medical
+- $ git clone https://github.com/j-sauceda/medical.git ./
+- $ cd ..
+- $ python3 -m venv medical
+- $ cd medical
+- $ source bin/activate
+- $ pip3 install -r requirements.txt
+- $ cp .env.example .env
+- $ edit .env
+- $ python3 manage.py collectstatic
+- uncomment STATICFILES_DIR in medical/settings.py
+- $ cd frontend/
+- $ npm install
+- $ npm run build
+- deploy -- depends on your server (nginx, apache, lighttpd)
