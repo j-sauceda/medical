@@ -15,7 +15,7 @@ However, the setup is flexible enough to handle different configurations.
 
 Please, notice that the source-code is provided without warranty. This is an unfinished project not meant for production.
 
-## hints
+## use hints
 
 - $ cd /path/to/Projects/
 - $ mkdir medical
