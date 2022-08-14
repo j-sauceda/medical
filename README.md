@@ -14,3 +14,23 @@ The source-code has been to use AWS RDS to store data, be served on an AWS EC2 u
 However, the setup is flexible enough to handle different configurations.
 
 Please, notice that the source-code is provided without warranty. This is an unfinished project not meant for production.
+
+## hints
+
+> $ cd /path/to/Projects/
+> $ mkdir medical
+> $ cd medical
+> $ git clone https://github.com/j-sauceda/medical.git ./
+> $ cd ..
+> $ python3 -m venv medical
+> $ cd medical
+> $ source bin/activate
+> $ pip3 install -r requirements.txt
+> $ cp .env.example .env
+> $ edit .env
+> $ python3 manage.py collectstatic
+> uncomment STATICFILES_DIR in medical/settings.py
+> $ cd frontend/
+> $ npm install
+> $ npm run build
+> deploy -- depends on your server (nginx, apache, lighttpd)
