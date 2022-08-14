@@ -7,7 +7,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import en from 'date-fns/locale/en-US';
 import es from 'date-fns/locale/es';
 registerLocale('en', en);
-# registerLocale('es', es);
+// registerLocale('es', es);
 setDefaultLocale('en');
 
 
