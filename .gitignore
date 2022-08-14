@@ -24,7 +24,6 @@ __pycache__
 
 # production
 /frontend/build
-/frontend/public
 
 # misc
 /frontend/.DS_STORE
