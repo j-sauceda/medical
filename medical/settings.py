@@ -26,13 +26,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG')
+DEBUG = False
 
 ALLOWED_HOSTS = [
     config('PUBLIC_IP'),
     config('DOMAIN'),
-    config('DOMAIN_HTTP'),
-    config('DOMAIN_HTTPS'),
     '127.0.0.1',
 ]
 
@@ -160,18 +158,18 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # console backend
-EMAIL_BACKEND = 'django_ses.SESBackend'
-EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-DEFAULT_FROM_EMAIL = SERVER_EMAIL = EMAIL_HOST_USER
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # console backend
+# EMAIL_BACKEND = 'django_ses.SESBackend'
+# EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+# DEFAULT_FROM_EMAIL = SERVER_EMAIL = EMAIL_HOST_USER
 
-AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
-AWS_SES_REGION_NAME = 'us-east-1'
+# AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+# AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
+# AWS_SES_REGION_NAME = 'us-east-1'
 
 
 GRAPHQL_AUTH = {
-    'ALLOW_LOGIN_NOT_VERIFIED': False,
+    'ALLOW_LOGIN_NOT_VERIFIED': True,
 }
 
 

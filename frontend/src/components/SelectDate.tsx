@@ -17,7 +17,7 @@ const initialValues: FormValues = {
 }
 
 const validationSchema = Yup.object({
-    date: Yup.date().min(new Date().toLocaleDateString()).required("Date required"),
+    date: Yup.date().min(new Date().toISOString()).required("Date required"),
 })
 
 const SelectDate: React.FC<Props> = ({ setDateSelected, setStep }) => {

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Button, ButtonGroup } from 'react-bootstrap';
 import PatientAppointments from './PatientAppointments';
 import PatientDetails from './PatientDetails';
