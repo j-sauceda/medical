@@ -8,6 +8,10 @@ __pycache__
 /include
 /lib
 /lib64
+/medical/bin
+/medical/lib
+/medical/lib64
+/medical/pyvenv.cfg
 /static
 
 
