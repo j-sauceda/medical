@@ -3,10 +3,11 @@
 This is a full-stack project made with:
 
 + Django
-+ jwt token auth
++ JWT token auth
 + GraphQL
 + ReactJS
 + TypeScript
++ Bootstrap
 
 its purpose is to provide an example of a practical way of integrating all these technologies.
 MediCal serves as web portal for setting and managing appointments and patients' records for a hypothetical medical clinic.
